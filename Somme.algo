@@ -1,0 +1,11 @@
+ALGORITHM somme_nombre
+VAR
+   num1,num2,num3: integer;
+   som: integer:=0
+BEGIN
+    Read(num1)
+    Read(num2)
+    Read(num3)
+    som:=num1+num2+num3
+    write(som)
+END

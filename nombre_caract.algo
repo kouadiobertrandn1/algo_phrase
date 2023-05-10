@@ -1,0 +1,10 @@
+Algorithme nombre_mots
+Var Bla : Caractère
+    Nb: Entier
+Debut
+Nb := 0
+Ecrire "Entrez une phrase : "
+Lire Bla
+nb := Len(Bla)
+Ecrire "Cette phrase compte ", Nb ," mots"
+Fin
