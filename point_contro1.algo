@@ -1,0 +1,33 @@
+algorithm point_de_control
+var 
+tab1,tab2: Array of integer[];
+dis,n1,n2,i,j: Integer;
+Begin 
+   write("entrer le nombre d'element du tableau1");
+   read(n1);
+    for i from 0 to n1 step 1 do 
+      read(tab1[i]);
+    end for
+   write("entrer le nombre d'element du tableau2");
+   read(n1);
+    for i from 0 to n2 step 1 do 
+      read(tab1[j]);
+    end for
+    for i from 0 to tab1.length-1 step 1 do 
+      for for j from 0 to tab2.length-1 step 1 do
+          WHILE (tab1[i]<>tab2[j]) DO
+            dis:=dis+tab1[i];
+          END_WHILE
+     end for
+    end for 
+    for j from 0 to tab2.length-1 step 1 do 
+      for for i from 0 to tab1.length-1 step 1 do
+          WHILE (tab2[j]<>tab1[i]) DO
+            dis:=dis+tab1[i];
+          END_WHILE
+     end for
+    end for 
+    write("la somme des nombres distints est ",dis);
+END
+
+
