@@ -1,0 +1,20 @@
+procedure tri_insertion(table tab of INTEGER)
+ALGORITHM 
+VAR
+   j,i:=INTEGER
+   x:=INTEGER // element a inserer 
+BEGIN
+    for i from 1 to tab.lenght-1 do 
+    //enregistrer tab[i] dans x
+     x:=tab[i]
+     j:=i
+     // decaler un espace pour une bonne insertion de x
+         WHILE (j>0 && tab[j-1]>x) DO
+         tab[j]:=tab[j-1]
+         j:=j-1
+            
+         END_WHILE
+    END for
+    //placer x dans l'espace laisser par le decalage j(o) j(-1)
+  tab[j]:=x
+END
