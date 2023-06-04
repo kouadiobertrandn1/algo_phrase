@@ -1,0 +1,22 @@
+procedure palindrome(char mot[],INTEGER n)
+ALGORITHM 
+VAR
+    i: INTEGER
+  
+BEGIN
+    ecrire("saisir le mot" );
+    lire(mot);
+    IF (n<=1) THEN
+        lire("ce mot est un palindrome ");
+        ELSE if
+        for i from 0 to n-1 do 
+
+            (mot[0]=mot[n-1] && mot[n++]=mot[n--] then 
+            read ("ce mot est un palindrome");
+            else 
+            read("ce mot n'est un palindrome");
+        END_IF
+    END_IF
+
+END
+
